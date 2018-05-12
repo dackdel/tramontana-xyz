@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Tramontana</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+      <link rel="stylesheet" type= "text/css" href="global.css">
+      <link rel="stylesheet" type= "text/css" href="landing.css">
+      <link rel="author" href="humans.txt">
+      <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"></div>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="doc.html" class="link link--dark"><i class="fa fa-book"></i> Documentation</a></li>
+        <li class="menu__item"><a href="galleryA/index.html" class="link link--dark"><i class="fa fa-file-image-o"></i> Gallery</a></li>
+        <li class="menu__item"><a href="" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1 class="hero__title">Tramontana</h1>
+      <p class="hero__description">A platform for interactive spaces.</p>
+    </div>
+    <div class="hero__terminal">
+      <img src="img/1.gif" width="200px">
+      <img src="img/2.gif" width="200px">
+      <img src="img/3.gif" width="200px">
+      <img src="img/4.gif" width="200px">
+    </div>
+    <div class="wrapper">
+      <div class="libraries">
+        <h3 class="section__title">Libraries</h3>
+        <div class="tab__container">
+          <ul class="tab__menu">
+            <li class="tab active" data-tab="processing">Processing</li>
+            <li class="tab" data-tab="javascrip">Javascript</li>
+            <li class="tab" data-tab="openframeworks">oF</li>
+          </ul>
+          <pre class="nohighlight code">
+            <a href="https://pierdr.github.io/Tramontana-for-Processing/" target="_blank">
+              <code class="tab__pane active processing">import websockets.*;</br>import tramontana.library.*;</br>Tramontana t;</br>void setup() {</br>t = new Tramontana(this, "192.168.1.16");</br>t.setColor(0.0,1.0,1.0,1.0);</br>}</code>
+            </a>
+            <a href="https://github.com/pierdr/Tramontana-for-Web" target="_blank">
+            <code class="tab__pane javascrip">var t = new tramontana();</br>t.start('192.168.1.16');</br>t.setColor(0.0,1.0,1.0,1.0);</code></a>
+            <code class="tab__pane openframeworks">openFrameworks coming soon...</code>
+          </pre>
+        </div>
+      </div>
+      <div class="operatingsystem">
+        <h3 class="section__title">Platforms</h3>
+        <div class="tab__container">
+          <ul class="tab__menu">
+            <li class="tab active" data-tab="ios">iOS</li>
+            <li class="tab" data-tab="osx">OSX</li>
+            <li class="tab" data-tab="android">Android</li>
+          </ul>
+          <pre class="nohighlight code">
+            <a href="https://itunes.apple.com/app/tramontana/id1121069555?ls=1&mt=8" target="_blank">
+              <code class="tab__pane active ios">https://itunes.apple.com/app/tramontana/id1121069555?ls=1&mt=8</code>
+            </a>
+            <a href="https://itunes.apple.com/app/tramontana/id1257425018?ls=1&mt=12" target="_blank">
+              <code class="tab__pane osx">https://itunes.apple.com/app/tramontana/id1257425018?ls=1&mt=12</code>
+            </a>
+            <code class="tab__pane android">Android app coming soon...</code>
+          </pre>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature__item">
+          <h3 class="section__title">Create</h3>
+          <p>With Tramontana it will be simple to architect choreographies and interactive spaces. Connect multiple devices to create mesmerizing immersive experiences from a simple sketch.</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Tramontana Boards</h3>
+          <p>The tramontana boards will help you connect your real world surroundings to become i/o objects that participate in the space. The boards will be coming soon.</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Android Soon</h3>
+          <p>You can expect the android app to come out soon. We currently working on it. If you would like to join and develop it, <a href="mailto:pierdr@me.com">contact us.</a></p>
+        </div>
+      </div>
+      <div class="callout">
+        <p>Read our documentation</p>
+        <a href="doc.html" class="button--primary">Documentation</a>
+      </div>
+    </div>
+    <div class="changelog">
+      <div class="wrapper">
+        <h3 class="section__title">Updates</h3>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">recently</h4>
+            <small class="changelog__date">10/Mar/2018</small>
+          </div>
+          <div class="changelog__detail">
+            <ul>
+              <li>Creating the Android Tramontana App</li>
+              <li>Designing v0.5 of the Tramontana board</li>
+            </ul>
+          </div>
+        </div>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">earlier</h4>
+            <small class="changelog__date">7/Nov/2017</small>
+          </div>
+          <div class="changelog__detail">
+            <ul>
+              <li>Creating v0.4 of the Tramontana board</li>
+              <li>minor updates on the javascript library</li>
+              <li>Created Tramontana Logo</li>
+            </ul>
+          </div>
+        </div>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">once upon a time</h4>
+            <small class="changelog__date">5/Mar/2017</small>
+          </div>
+          <div class="changelog__detail">
+            <ul>
+              <li>v0.2 of the Tramontana boards</li>
+              <li>Ability to send and recieve signals from iOS device</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">Tramontana is a platform for interactive spaces. Created by <a href="http://pierdr.com/" target="_blank" class="link link--light">Pier</a>, <a href="http://ubidefeo.com/" target="_blank" class="link link--light">Ubi</a> and <a href="http://ankkit.com/" target="_blank" class="link link--light">Ankkit</a>.</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="script.js"></script>
+  </body>
+</html>
