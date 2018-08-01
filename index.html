@@ -1,140 +1,215 @@
-<!doctype html>
-<html>
-  <head>
-      <meta charset="utf-8">
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Tramontana</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
-      <link rel="stylesheet" type= "text/css" href="global.css">
-      <link rel="stylesheet" type= "text/css" href="landing.css">
-      <link rel="author" href="humans.txt">
-      <link rel="shortcut icon" type="image/png" href="favicon.png"/>
-  </head>
-  <body>
-    <nav>
-      <div class="logo"></div>
-      <ul class="menu">
-        <div class="menu__item toggle"><span></span></div>
-        <li class="menu__item"><a href="doc.html" class="link link--dark"><i class="fa fa-book"></i> Documentation</a></li>
-        <li class="menu__item"><a href="galleryA/index.html" class="link link--dark"><i class="fa fa-file-image-o"></i> Gallery</a></li>
-        <li class="menu__item"><a href="" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <h1 class="hero__title">Tramontana</h1>
-      <p class="hero__description">A platform for interactive spaces.</p>
-    </div>
-    <div class="hero__terminal">
-      <img src="img/1.gif" width="200px">
-      <img src="img/2.gif" width="200px">
-      <img src="img/3.gif" width="200px">
-      <img src="img/4.gif" width="200px">
-    </div>
-    <div class="wrapper">
-      <div class="libraries">
-        <h3 class="section__title">Libraries</h3>
-        <div class="tab__container">
-          <ul class="tab__menu">
-            <li class="tab active" data-tab="processing">Processing</li>
-            <li class="tab" data-tab="javascrip">Javascript</li>
-            <li class="tab" data-tab="openframeworks">oF</li>
-          </ul>
-          <pre class="nohighlight code">
-            <a href="https://pierdr.github.io/Tramontana-for-Processing/" target="_blank">
-              <code class="tab__pane active processing">import websockets.*;</br>import tramontana.library.*;</br>Tramontana t;</br>void setup() {</br>t = new Tramontana(this, "192.168.1.16");</br>t.setColor(0.0,1.0,1.0,1.0);</br>}</code>
-            </a>
-            <a href="https://github.com/pierdr/Tramontana-for-Web" target="_blank">
-            <code class="tab__pane javascrip">var t = new tramontana();</br>t.start('192.168.1.16');</br>t.setColor(0.0,1.0,1.0,1.0);</code></a>
-            <code class="tab__pane openframeworks">openFrameworks coming soon...</code>
-          </pre>
-        </div>
-      </div>
-      <div class="operatingsystem">
-        <h3 class="section__title">Platforms</h3>
-        <div class="tab__container">
-          <ul class="tab__menu">
-            <li class="tab active" data-tab="ios">iOS</li>
-            <li class="tab" data-tab="osx">OSX</li>
-            <li class="tab" data-tab="android">Android</li>
-          </ul>
-          <pre class="nohighlight code">
-            <a href="https://itunes.apple.com/app/tramontana/id1121069555?ls=1&mt=8" target="_blank">
-              <code class="tab__pane active ios">https://itunes.apple.com/app/tramontana/id1121069555?ls=1&mt=8</code>
-            </a>
-            <a href="https://itunes.apple.com/app/tramontana/id1257425018?ls=1&mt=12" target="_blank">
-              <code class="tab__pane osx">https://itunes.apple.com/app/tramontana/id1257425018?ls=1&mt=12</code>
-            </a>
-            <code class="tab__pane android">Android app coming soon...</code>
-          </pre>
-        </div>
-      </div>
-      <div class="feature">
-        <div class="feature__item">
-          <h3 class="section__title">Create</h3>
-          <p>With Tramontana it will be simple to architect choreographies and interactive spaces. Connect multiple devices to create mesmerizing immersive experiences from a simple sketch.</p>
-        </div>
-        <div class="feature__item">
-          <h3 class="section__title">Tramontana Boards</h3>
-          <p>The tramontana boards will help you connect your real world surroundings to become i/o objects that participate in the space. The boards will be coming soon.</p>
-        </div>
-        <div class="feature__item">
-          <h3 class="section__title">Android Soon</h3>
-          <p>You can expect the android app to come out soon. We currently working on it. If you would like to join and develop it, <a href="mailto:pierdr@me.com">contact us.</a></p>
-        </div>
-      </div>
-      <div class="callout">
-        <p>Read our documentation</p>
-        <a href="doc.html" class="button--primary">Documentation</a>
-      </div>
-    </div>
-    <div class="changelog">
-      <div class="wrapper">
-        <h3 class="section__title">Updates</h3>
-        <div class="changelog__item">
-          <div class="changelog__meta">
-            <h4 class="changelog__title">recently</h4>
-            <small class="changelog__date">10/Mar/2018</small>
-          </div>
-          <div class="changelog__detail">
-            <ul>
-              <li>Creating the Android Tramontana App</li>
-              <li>Designing v0.5 of the Tramontana board</li>
-            </ul>
-          </div>
-        </div>
-        <div class="changelog__item">
-          <div class="changelog__meta">
-            <h4 class="changelog__title">earlier</h4>
-            <small class="changelog__date">7/Nov/2017</small>
-          </div>
-          <div class="changelog__detail">
-            <ul>
-              <li>Creating v0.4 of the Tramontana board</li>
-              <li>minor updates on the javascript library</li>
-              <li>Created Tramontana Logo</li>
-            </ul>
-          </div>
-        </div>
-        <div class="changelog__item">
-          <div class="changelog__meta">
-            <h4 class="changelog__title">once upon a time</h4>
-            <small class="changelog__date">5/Mar/2017</small>
-          </div>
-          <div class="changelog__detail">
-            <ul>
-              <li>v0.2 of the Tramontana boards</li>
-              <li>Ability to send and recieve signals from iOS device</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="footer">Tramontana is a platform for interactive spaces. Created by <a href="http://pierdr.com/" target="_blank" class="link link--light">Pier</a>, <a href="http://ubidefeo.com/" target="_blank" class="link link--light">Ubi</a> and <a href="http://ankkit.com/" target="_blank" class="link link--light">Ankkit</a>.</footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <script src="script.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tramontana</title>
+		<meta name="description" content="Tramontana leverages the capabilities of the object that we have all come to carry with us anywhere, all the time, our smartphone. What used to involve complex tasks like networking, native app development, etc. can now be created with a single sketch on your computer." />
+		<meta name="keywords" content="interactive spaces, tramontana, sensors, libraries, processing, openFrameworks, wekinator" />
+		<meta name="author" content="Wind people" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this website in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="loading">
+		<svg class="hidden">
+			<svg id="icon-github" viewBox="0 0 33 33">
+				<title>github</title>
+				<path d="M16.608.455C7.614.455.32 7.748.32 16.745c0 7.197 4.667 13.302 11.14 15.456.815.15 1.112-.353 1.112-.785 0-.386-.014-1.411-.022-2.77-4.531.984-5.487-2.184-5.487-2.184-.741-1.882-1.809-2.383-1.809-2.383-1.479-1.01.112-.99.112-.99 1.635.115 2.495 1.679 2.495 1.679 1.453 2.489 3.813 1.77 4.741 1.353.148-1.052.569-1.77 1.034-2.177-3.617-.411-7.42-1.809-7.42-8.051 0-1.778.635-3.233 1.677-4.371-.168-.412-.727-2.069.16-4.311 0 0 1.367-.438 4.479 1.67a15.602 15.602 0 0 1 4.078-.549 15.62 15.62 0 0 1 4.078.549c3.11-2.108 4.475-1.67 4.475-1.67.889 2.242.33 3.899.163 4.311C26.37 12.66 27 14.115 27 15.893c0 6.258-3.809 7.635-7.437 8.038.584.503 1.105 1.497 1.105 3.017 0 2.177-.02 3.934-.02 4.468 0 .436.294.943 1.12.784 6.468-2.159 11.131-8.26 11.131-15.455 0-8.997-7.294-16.29-16.291-16.29"></path>
+			</svg>
+			<symbol id="icon-cross" viewBox="0 0 24 23">
+				<title>cross</title>
+				<path d="M23.865 3.677c.197-.383.164-.818-.008-1.18.048-.41-.06-.827-.448-1.147L22.323.457c-.636-.524-1.632-.689-2.25 0a155.348 155.348 0 0 1-8.797 9.001C9.011 7.342 6.72 5.255 4.443 3.165c-.8-.734-1.956-.503-2.458.37C1.253 3.9.659 4.374.168 5.182c-.233.386-.215.872 0 1.258 1.47 2.635 4.31 4.951 6.646 7.083-.313.28-.623.562-.942.836-3.146 2.702-5.268 4.416-1.331 7.187.053.037.107.029.161.05.076.036.148.06.232.074.026 0 .05.005.075.003.082.007.16.027.243.011 2.117-.415 4.085-2.074 5.872-3.9 1.74 1.715 3.592 3.353 5.63 4.325.485.232 1.063.097 1.436-.227.626.047 1.197-.342 1.484-.901.042-.026.07-.041.116-.07.91-.569.993-1.701.32-2.482-1.522-1.762-3.138-3.438-4.787-5.084 2.968-2.9 6.674-6.027 8.542-9.667z"/>
+			</symbol>
+		</svg>
+		<main>
+			<div class="content">
+				<header class="codrops-header">
+					<div class="codrops-links">
+						<a class="codrops-icon codrops-icon--prev" href="" title=""><img src="img/icon.png"></a>
+					</div>
+					<h1 class="codrops-header__title">TRAMONTANA</h1>
+					<a class="github" href="https://github.com/" title="Find this project on GitHub"><svg class="icon icon--github"><use xlink:href="#icon-github"></use></svg></a>
+				</header>
+			</div>
+			<div class="content">
+				<div class="grid">
+					<a class="grid__item" href="#preview-1">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="https://media.giphy.com/media/1wmNZlq98qH67fD3EP/200w_d.gif" alt="image is loading"/>
+							<h4 class="box__text"><span class="box__text-inner">?</span></h4>
+							<p class="box__content">What is Tramontana?</p>
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-2">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Processing</span></h4>
+							<img class="box__img" src="https://media.giphy.com/media/40a7SUyQ2jDyC2DxSC/200w_d.gif" alt="image is loading"/>
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-3">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="img/js.png" alt="image is loading"/>
+							<h4 class="box__text box__text--topcloser"><span class="box__text-inner">Javascript</span></h4>
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-4">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="img/5.jpg" alt="image is loading"/>
+							<h4 class="box__text box__text--bottom box__text--right"><span class="box__text-inner box__text-inner--rotated3">openFrameworks</span></h4>
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-5">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="img/6.jpg" alt="image is loading"/>
+							<h4 class="box__text box__text--bottomcloser"><span class="box__text-inner">android</span></h4>
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-6">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="img/7.jpg" alt="image is loading"/>
+							<h4 class="box__text"><span class="box__text-inner">ios</span></h4>
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-7">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="https://media.giphy.com/media/4N90yfC8OvilZ9mX1Y/200w_d.gif" alt="image is loading"/>
+							<h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner" data-hover="soon">soon</span></h3>
+							<h4 class="box__text box__title--bottom"><span class="box__text-inner box__text-inner--rotated1">T-boards</span></h4>
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-8">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="img/4.jpg" alt="image is loading"/>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner">Wekinator</span></h4>
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-9">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="img/10.jpg" alt="image is loading"/>
+							<h4 class="box__text box__text--bottom"><span class="box__text-inner">extra 1</span></h4>
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-10">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="img/11.jpg" alt="image is loading"/>
+							<h4 class="box__text"><span class="box__text-inner box__text-inner--rotated2">extra 2</span></h4>
+						</div>
+					</a>
+					<a class="grid__item" href="#preview-11">
+						<div class="box">
+							<div class="box__shadow"></div>
+							<img class="box__img" src="img/12.jpg" alt="image is loading"/>
+							<h4 class="box__text box__text--bottom box__text--right"><span class="box__text-inner box__text-inner--rotated3">extra 3</span></h4>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="overlay">
+				<div class="overlay__reveal"></div>
+				<div class="overlay__item" id="preview-1">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="https://media.giphy.com/media/1wmNZlq98qH67fD3EP/giphy.gif" alt="image is loading"/>
+						<h4 class="box__text"><span class="box__text-inner">?</span></h4>
+					</div>
+					<p class="overlay__content">Tramontana leverages the capabilities of the object that we have all come to carry with us anywhere, all the time, our smartphone. With libraries for Processing, Javascript and OpenFrameworks you can access the inputs and outputs of one or more smartphones to easily and quickly prototype interactive spaces, connected products or just something you’d like to be wireless. What used to involve complex tasks like networking, native app development, etc. can now be created with a single sketch on your computer.</p>
+				</div>
+				<div class="overlay__item" id="preview-2">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="https://media.giphy.com/media/40a7SUyQ2jDyC2DxSC/giphy.gif" alt="image is loading"/>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Processing</span></h4>
+					</div>
+					<p class="overlay__content">adding the library:<br />1. After you have <a href="https://processing.org/download/">downloaded & installed processing</a>, open it<br />2. In the menu bar click on Sketch > Import Library > Add library<br />3. Search for 'Tramontana' and click Install<br />4. Install 'Websockets' in the same way<br /><a href="https://github.com/pierdr/Tramontana-for-Processing/tree/master/examples">examples</a>/<a href="https://pierdr.github.io/Tramontana-for-Processing/reference/index.html">reference</a>/<a href="https://github.com/pierdr/Tramontana-for-Processing">source</a>/<a href="https://pierdr.github.io/Tramontana-for-Processing/">help</a></p>
+				</div>
+				<div class="overlay__item" id="preview-3">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="img/original/js.png" alt="image is loading"/>
+						<h4 class="box__text box__text--topcloser"><span class="box__text-inner">Javascript</span></h4>
+					</div>
+					<p class="overlay__content"><script src="https://gist.github.com/dackdel/a18c695d09c86e775f1e1cc3c6176c70.js"></script></p>
+				</div>
+				<div class="overlay__item" id="preview-4">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="img/original/5.jpg" alt="image is loading"/>
+						<h4 class="box__text box__text--bottom box__text--right"><span class="box__text-inner box__text-inner--rotated3">openFrameworks</span></h4>
+					</div>
+					<p class="overlay__content">It's time the tale were told of how you took a child and you made him old.</p>
+				</div>
+				<div class="overlay__item" id="preview-5">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="img/original/6.jpg" alt="image is loading"/>
+						<h4 class="box__text box__text--bottomcloser"><span class="box__text-inner">Android</span></h4>
+					</div>
+					<p class="overlay__content">It's time the tale were told of how you took a child and you made him old.</p>
+				</div>
+				<div class="overlay__item" id="preview-6">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="img/original/7.jpg" alt="image is loading"/>
+						<h4 class="box__text"><span class="box__text-inner">ios</span></h4>
+					</div>
+					<p class="overlay__content">It's time the tale were told of how you took a child and you made him old.</p>
+				</div>
+				<div class="overlay__item" id="preview-7">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="https://media.giphy.com/media/1zKvpjytsLopjHyRHl/giphy.gif" alt="image is loading"/>
+						<h4 class="box__text box__title--bottom"><span class="box__text-inner box__text-inner--rotated1">T-Boards</span></h4>
+					</div>
+					<p class="overlay__content">Coming soon.</p>
+				</div>
+				<div class="overlay__item" id="preview-8">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="img/original/9.jpg" alt="image is loading"/>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner">Wekinator</span></h4>
+					</div>
+					<p class="overlay__content">It's time the tale were told of how you took a child and you made him old.</p>
+				</div>
+				<div class="overlay__item" id="preview-9">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="img/original/10.jpg" alt="image is loading"/>
+						<h4 class="box__text box__text--bottom"><span class="box__text-inner">extra 1</span></h4>
+					</div>
+					<p class="overlay__content">It's time the tale were told of how you took a child and you made him old.</p>
+				</div>
+				<div class="overlay__item" id="preview-10">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="img/original/11.jpg" alt="image is loading"/>
+						<h4 class="box__text"><span class="box__text-inner box__text-inner--rotated2">extra 2</span></h4>
+					</div>
+					<p class="overlay__content">It's time the tale were told of how you took a child and you made him old.</p>
+				</div>
+				<div class="overlay__item" id="preview-11">
+					<div class="box">
+						<div class="box__shadow"></div>
+						<img class="box__img box__img--original" src="img/original/12.jpg" alt="image is loading"/>
+						<h4 class="box__text box__text--bottom box__text--right"><span class="box__text-inner box__text-inner--rotated3">extra 3</span></h4>
+					</div>
+					<p class="overlay__content">It's time the tale were told of how you took a child and you made him old.</p>
+				</div>
+				<button class="overlay__close"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
+			</div>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/demo.js"></script>
+	</body>
 </html>
