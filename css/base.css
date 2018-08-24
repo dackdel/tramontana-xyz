@@ -143,6 +143,14 @@ main {
 	margin: 0 0 0 auto;
 }
 
+.whatis {
+	position: relative;
+	width: 50%;
+	max-width: 1440px;
+	padding: 1rem 30rem 5rem 3rem;
+
+}
+
 /* Top Navigation Style */
 .tramontana-links {
 	position: relative;
@@ -388,6 +396,11 @@ main {
 		grid-row-gap: 2rem;
 		grid-template-columns: repeat(3,calc(100% / 3));
 	}
+	.whatis{
+		position: relative;
+		width: 100%;
+		margin: 1rem 0rem 5rem 0rem;
+	}
 	.grid__item {
 		margin: 0;
 	}
@@ -467,6 +480,11 @@ main {
 	.grid {
 		grid-template-columns: repeat(4,25%);
 	}
+	.whatis{
+		position: relative;
+		width: 100%;
+		margin: 1rem 0rem 5rem 0rem;
+	}
 	.grid__item:nth-child(4n-2) {
 		margin-top: -8rem;
 		margin-bottom: 8rem;
@@ -487,6 +505,11 @@ main {
 		flex-direction: column;
 		height: auto;
 		min-height: 0;
+	}
+	.whatis{
+		position: relative;
+		width: 100%;
+		margin: 1rem 0rem 5rem 0rem;
 	}
 	.content--fixed {
 		position: relative;
